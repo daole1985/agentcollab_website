@@ -149,14 +149,15 @@ export default function Integrations() {
             </div>
           </motion.div>
           <FadeInUp delay={0.3}>
-            <div className="text-center mt-6">
+            <div className="w-full max-w-4xl mx-auto text-center mt-6">
               <span className="text-gradient-hero">
                 Engage with customers through TikTok, Instagram, Facebook
                 Messenger, WhatsApp, Zalo, and Telegram...
-                <br /> Extend your agents' capabilities by connecting to Gmail,
-                Slack, GitHub, and other business applications
-                <br /> to handle conversations, access information, and interact
-                with external services.
+                <br className="hidden lg:block" /> Extend your agents'
+                capabilities by connecting to Gmail, Slack, GitHub, and other
+                business applications
+                <br className="hidden lg:block" /> to handle conversations,
+                access information, and interact with external services.
               </span>
             </div>
           </FadeInUp>
