@@ -177,8 +177,8 @@ const plans: Plan[] = [
       "Build a tailored AI agent workforce designed around your unique goals, systems, workflows, and business needs.",
     monthly: null,
     yearly: null,
-    originalMonthly: null,
-    originalYearly: null,
+    originalMonthly: 0,
+    originalYearly: 0,
     customLabel: "Custom",
     cta: "Contact Us",
     features: [
