@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100" fill="none">
+
+  <defs>
+    <linearGradient id="telegramGradient" x1="5" y1="10" x2="95" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d5dbe6"></stop>
+      <stop offset="50%" stop-color="#a6daff"></stop>
+      <stop offset="100%" stop-color="#4078a8"></stop>
+    </linearGradient>
+  </defs>
+
+  <path d="M88.723 12.142
+       C76.419 17.238 23.661 39.091 9.084 45.047
+       C-0.692 48.862 5.031 52.439 5.031 52.439
+       S13.376 55.3 20.53 57.446
+       C27.683 59.592 31.498 57.208 31.498 57.208
+       L65.118 34.556
+       C77.04 26.449 74.179 33.125 71.317 35.987
+       C65.118 42.187 54.865 51.962 46.281 59.831
+       C42.466 63.169 44.373 66.03 46.043 67.461
+       C52.242 72.707 69.172 83.437 70.125 84.152
+       C75.162 87.718 85.07 92.851 86.577 82.006
+       L92.538 44.571
+       C94.446 31.934 96.353 20.25 96.591 16.912
+       C97.307 8.804 88.723 12.142 88.723 12.142Z" fill="url(#telegramGradient)"></path>
+
+</svg>
