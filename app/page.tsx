@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
+import Channels from "./components/Channels";
 import Process from "./components/Process";
 import OurClients from "./components/OurClients";
 import Integrations from "./components/Integrations";
@@ -90,6 +91,7 @@ function HomeContent() {
       <Process />
       <OurClients />
       <Integrations />
+      <Channels />
       <Testimonials />
       <Pricing />
       <FAQ />

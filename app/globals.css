@@ -174,30 +174,44 @@ html {
   /* Marquee rows for integrations */
   @keyframes marquee-left {
     from {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
+
     to {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
   }
 
   @keyframes marquee-right {
     from {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
+
     to {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee-left,
+    .animate-marquee-right {
+      animation: none;
     }
   }
 
   .animate-marquee-left {
-    animation: marquee-left 28s linear infinite;
+    animation: marquee-left 25s linear infinite;
   }
 
   .animate-marquee-right {
-    animation: marquee-right 28s linear infinite;
+    animation: marquee-right 25s linear infinite;
   }
-
+  .marquee-track {
+    width: max-content;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
   .marquee-mask {
     -webkit-mask-image: linear-gradient(
       to right,
