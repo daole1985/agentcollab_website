@@ -568,7 +568,7 @@ export default function Pricing() {
                         <div
                           className={`flex items-center ${hasAnyDiscount ? "h-[74px]" : ""}`}
                         >
-                          <span className="text-4xl font-medium">
+                          <span className="text-4xl font-medium leading-none">
                             {p.customLabel}
                           </span>
                         </div>

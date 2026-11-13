@@ -110,7 +110,7 @@ export default function Integrations() {
           </FadeInUp>
           <FadeInUp className="space-y-3 leading-[1.65] text-center lg:text-left">
             <p>
-              Our conversational agents meet your customers where they are —
+              Our conversational agents meet your customers where they are -
               whether on your website, mobile app, customer portal, or popular
               messaging and social media platforms such as{" "}
               <span className="font-semibold">
