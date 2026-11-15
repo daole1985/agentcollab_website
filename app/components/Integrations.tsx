@@ -245,9 +245,10 @@ export default function Integrations() {
             </h2>
           </div>
           <p>
-            Seamlessly connect with 100+ leading platforms and communication
-            channels to centralize data, automate workflows, and enhance
-            operational efficiency
+            Connect 100+ leading platforms and business apps like Gmail and
+            HubSpot to centralize data, automate workflows, and empower your AI
+            agents to seamlessly access information and interact with external
+            services.
           </p>
         </FadeInUp>
         <div className="mt-10 lg:mt-14">
@@ -263,16 +264,6 @@ export default function Integrations() {
               <MarqueeRow icons={rows[2]} direction="right" />
             </div>
           </motion.div>
-          <FadeInUp delay={0.3}>
-            <div className="w-full max-w-xl mx-auto text-center mt-6">
-              Extend your agents' capabilities by connecting to{" "}
-              <span className="font-semibold">
-                Gmail, Hubspot and other business applications
-              </span>{" "}
-              to handle conversations, access information, and interact with
-              external services.
-            </div>
-          </FadeInUp>
         </div>
       </div>
       <div className="absolute left-0 right-0 bottom-0 h-[4px] z-[4] bg-gradient-to-r from-[#04070d] via-[rgba(216,231,242,0.07)] to-[#04070d]"></div>

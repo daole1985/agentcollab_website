@@ -101,14 +101,16 @@ export default function Integrations() {
             <div>
               <h2 className="text-3xl md:text-[44px] leading-[1.25] font-medium">
                 <span className="inline-block bg-[linear-gradient(138deg,#d5dbe6_51.657657657657666%,#04070d_166%)] bg-clip-text text-transparent">
-                  Chat with your{" "}
-                  <span className="font-serif-italic">customers</span>
-                  <br /> wherever they are
+                  Messaging <span className="font-serif-italic">Channels</span>
                 </span>
               </h2>
             </div>
+            <p>
+              Connect with customers across their favorite channels and manage
+              every conversation seamlessly.
+            </p>
           </FadeInUp>
-          <FadeInUp className="space-y-3 leading-[1.65] text-center lg:text-left">
+          <FadeInUp className="space-y-3 text-sm leading-relaxed text-[#8b95a7] text-center lg:text-left">
             <p>
               Our conversational agents meet your customers where they are -
               whether on your website, mobile app, customer portal, or popular
