@@ -42,20 +42,24 @@ export default function Hero() {
   const scrollNext = () => scrollTo("benefit");
 
   // Income Simulator
+  const [branchesStarter, setBranchesStarter] = useState(1);
   const [branchesPro, setBranchesPro] = useState(1);
   const [branchesBusiness, setBranchesBusiness] = useState(1);
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
 
+  const starterBasePrice = billing === "monthly" ? 10 : 9;
   const proBasePrice = billing === "monthly" ? 54 : 49;
   const businessBasePrice = billing === "monthly" ? 164 : 149;
 
+  const pricePerBranchStarter = starterBasePrice * 0.3;
   const pricePerBranchPro = proBasePrice * 0.3;
   const pricePerBranchBusiness = businessBasePrice * 0.3;
 
+  const totalPriceStarter = branchesStarter * pricePerBranchStarter;
   const totalPricePro = branchesPro * pricePerBranchPro;
   const totalPriceBusiness = branchesBusiness * pricePerBranchBusiness;
 
-  const totalAll = totalPricePro + totalPriceBusiness;
+  const totalAll = totalPriceStarter + totalPricePro + totalPriceBusiness;
   // const isMillion = totalAll >= 1_000_000;
 
   const [currency, setCurrency] = useState<Currency>("USD");
@@ -87,7 +91,8 @@ export default function Hero() {
     return new Intl.NumberFormat(currency === "VND" ? "vi-VN" : "en-US", {
       style: "currency",
       currency,
-      maximumFractionDigits: currency === "VND" ? 0 : 0,
+      minimumFractionDigits: 0,
+      maximumFractionDigits: currency === "VND" ? 0 : 1,
     }).format(converted);
   };
 
@@ -239,6 +244,12 @@ export default function Hero() {
               </div>
             </div>
             <div className="space-y-10">
+              <PricingSlider
+                label="Starter Plan"
+                value={branchesStarter}
+                setValue={setBranchesStarter}
+                basePriceFormatted={formatPrice(starterBasePrice) || ""}
+              />
               <PricingSlider
                 label="Pro Plan"
                 value={branchesPro}
